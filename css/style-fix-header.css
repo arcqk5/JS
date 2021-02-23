@@ -1,0 +1,40 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.header {
+    background-color: rgb(105, 105, 105);
+    height: 50px;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform .1s linear;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header.hide {
+    transform: translateY(-50px);
+}
+
+main {
+    height: 10000px;
+    background-color: rgb(211, 214, 214);
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
