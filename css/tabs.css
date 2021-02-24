@@ -1,0 +1,29 @@
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.tabs--bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs--bar__item {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.tabs--bar__item.active {
+    border-color: #789;
+}
+
+.tab {
+    background-color: rgb(185, 185, 185);
+    display: none;
+    padding: 20px;
+}
+
+.tab.active {
+    display: block;
+}
