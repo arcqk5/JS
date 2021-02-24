@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+.accordion {
+
+}
+
+.accordion__item {
+    margin-bottom: 25px;
+}
+
+.accordion__item--trigger {
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.accordion__item--content {
+    padding: 20px;
+    border: 1px solid #000;
+    border-top: none;
+
+    display: none;
+}
+
+.accordion__item--active .accordion__item--content {
+    display: block;
+}
